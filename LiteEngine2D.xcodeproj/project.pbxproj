@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		127011441CC2A7AB001840A7 /* MonsterObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127011351CC2A7AB001840A7 /* MonsterObject.cpp */; };
+		127011451CC2A7AB001840A7 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127011361CC2A7AB001840A7 /* Game.cpp */; };
+		127011461CC2A7AB001840A7 /* GameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127011371CC2A7AB001840A7 /* GameEngine.cpp */; };
+		127011471CC2A7AB001840A7 /* GameTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127011381CC2A7AB001840A7 /* GameTime.cpp */; };
+		127011481CC2A7AB001840A7 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127011391CC2A7AB001840A7 /* Image.cpp */; };
+		127011491CC2A7AB001840A7 /* ImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1270113A1CC2A7AB001840A7 /* ImageLoader.cpp */; };
+		1270114A1CC2A7AB001840A7 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1270113B1CC2A7AB001840A7 /* Input.cpp */; };
+		1270114B1CC2A7AB001840A7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1270113C1CC2A7AB001840A7 /* main.cpp */; };
+		1270114C1CC2A7AB001840A7 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1270113D1CC2A7AB001840A7 /* Object.cpp */; };
+		1270114D1CC2A7AB001840A7 /* Resources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1270113E1CC2A7AB001840A7 /* Resources.cpp */; };
+		1270114E1CC2A7AB001840A7 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1270113F1CC2A7AB001840A7 /* Scene.cpp */; };
+		1270114F1CC2A7AB001840A7 /* SceneObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127011401CC2A7AB001840A7 /* SceneObject.cpp */; };
+		127011501CC2A7AB001840A7 /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127011411CC2A7AB001840A7 /* Screen.cpp */; };
+		127011511CC2A7AB001840A7 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127011421CC2A7AB001840A7 /* Vector2.cpp */; };
+		127011521CC2A7AB001840A7 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127011431CC2A7AB001840A7 /* Window.cpp */; };
+		E614C7F31EC22310006E6391 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E614C7F21EC22310006E6391 /* SDL2.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		E614C7F51EC22356006E6391 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E614C7F41EC22356006E6391 /* SDL2_image.framework */; };
+		FA333F3B1CECAECA00237A60 /* MonsterObject2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA333F3A1CECAECA00237A60 /* MonsterObject2.cpp */; };
+		FA333F3D1CECAEDB00237A60 /* MonsterObject3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA333F3C1CECAEDB00237A60 /* MonsterObject3.cpp */; };
+		FA6895051CCBB57700A748D2 /* CharObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA6895041CCBB57700A748D2 /* CharObject.cpp */; };
+		FA8954F11CEFA16C0019E616 /* Animator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA8954F01CEFA16C0019E616 /* Animator.cpp */; };
+		FABC1CD11CF09AEE00833C08 /* MonsterAnimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FABC1CD01CF09AEE00833C08 /* MonsterAnimator.cpp */; };
+		FABC1CD41CF0B80200833C08 /* BulletAnimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FABC1CD31CF0B80200833C08 /* BulletAnimator.cpp */; };
+		FAD2F9031CDB6CE300D30C99 /* ColliderInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAD2F9021CDB6CE300D30C99 /* ColliderInterface.cpp */; };
+		FAF3AE891CE4B2F800EE725E /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF3AE881CE4B2F800EE725E /* Background.cpp */; };
+		FAF8B4E31CFF7408006490BA /* CollisionDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF8B4E21CFF7408006490BA /* CollisionDetector.cpp */; };
+		FAF8C4721CE72B1E00D60642 /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF8C4711CE72B1E00D60642 /* Bullet.cpp */; };
+		FAF8C4751CE7348C00D60642 /* BulletController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF8C4741CE7348C00D60642 /* BulletController.cpp */; };
+		FAF8D7241CDC80430019F829 /* CollisionSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF8D7231CDC80430019F829 /* CollisionSystem.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		127011281CC2A6E2001840A7 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Assets/Images/Ball.png;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1270112A1CC2A6E2001840A7 /* LiteEngine2D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LiteEngine2D; sourceTree = BUILT_PRODUCTS_DIR; };
+		127011351CC2A7AB001840A7 /* MonsterObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MonsterObject.cpp; path = ../../src/MonsterObject.cpp; sourceTree = "<group>"; };
+		127011361CC2A7AB001840A7 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = ../../src/Game.cpp; sourceTree = "<group>"; };
+		127011371CC2A7AB001840A7 /* GameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameEngine.cpp; path = ../../src/GameEngine.cpp; sourceTree = "<group>"; };
+		127011381CC2A7AB001840A7 /* GameTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameTime.cpp; path = ../../src/GameTime.cpp; sourceTree = "<group>"; };
+		127011391CC2A7AB001840A7 /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Image.cpp; path = ../../src/Image.cpp; sourceTree = "<group>"; };
+		1270113A1CC2A7AB001840A7 /* ImageLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageLoader.cpp; path = ../../src/ImageLoader.cpp; sourceTree = "<group>"; };
+		1270113B1CC2A7AB001840A7 /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Input.cpp; path = ../../src/Input.cpp; sourceTree = "<group>"; };
+		1270113C1CC2A7AB001840A7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = "<group>"; };
+		1270113D1CC2A7AB001840A7 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Object.cpp; path = ../../src/Object.cpp; sourceTree = "<group>"; };
+		1270113E1CC2A7AB001840A7 /* Resources.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Resources.cpp; path = ../../src/Resources.cpp; sourceTree = "<group>"; };
+		1270113F1CC2A7AB001840A7 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scene.cpp; path = ../../src/Scene.cpp; sourceTree = "<group>"; };
+		127011401CC2A7AB001840A7 /* SceneObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneObject.cpp; path = ../../src/SceneObject.cpp; sourceTree = "<group>"; };
+		127011411CC2A7AB001840A7 /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Screen.cpp; path = ../../src/Screen.cpp; sourceTree = "<group>"; };
+		127011421CC2A7AB001840A7 /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2.cpp; path = ../../src/Vector2.cpp; sourceTree = "<group>"; };
+		127011431CC2A7AB001840A7 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = ../../src/Window.cpp; sourceTree = "<group>"; };
+		127011541CC2A7BE001840A7 /* MonsterObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MonsterObject.h; path = ../../include/MonsterObject.h; sourceTree = "<group>"; };
+		127011551CC2A7BE001840A7 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../../include/Game.h; sourceTree = "<group>"; };
+		127011561CC2A7BE001840A7 /* GameEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameEngine.h; path = ../../include/GameEngine.h; sourceTree = "<group>"; };
+		127011571CC2A7BE001840A7 /* GameTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameTime.h; path = ../../include/GameTime.h; sourceTree = "<group>"; };
+		127011581CC2A7BE001840A7 /* Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Image.h; path = ../../include/Image.h; sourceTree = "<group>"; };
+		127011591CC2A7BE001840A7 /* ImageLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImageLoader.h; path = ../../include/ImageLoader.h; sourceTree = "<group>"; };
+		1270115A1CC2A7BE001840A7 /* Input.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Input.h; path = ../../include/Input.h; sourceTree = "<group>"; };
+		1270115B1CC2A7BE001840A7 /* Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Object.h; path = ../../include/Object.h; sourceTree = "<group>"; };
+		1270115C1CC2A7BE001840A7 /* ResourceLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ResourceLoader.h; path = ../../include/ResourceLoader.h; sourceTree = "<group>"; };
+		1270115D1CC2A7BE001840A7 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../../include/Resources.h; sourceTree = "<group>"; };
+		1270115E1CC2A7BE001840A7 /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Scene.h; path = ../../include/Scene.h; sourceTree = "<group>"; };
+		1270115F1CC2A7BE001840A7 /* SceneObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneObject.h; path = ../../include/SceneObject.h; sourceTree = "<group>"; };
+		127011601CC2A7BE001840A7 /* Screen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Screen.h; path = ../../include/Screen.h; sourceTree = "<group>"; };
+		127011611CC2A7BE001840A7 /* Vector2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Vector2.h; path = ../../include/Vector2.h; sourceTree = "<group>"; };
+		127011621CC2A7BE001840A7 /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Window.h; path = ../../include/Window.h; sourceTree = "<group>"; };
+		E614C7F21EC22310006E6391 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		E614C7F41EC22356006E6391 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_image.framework; sourceTree = "<group>"; };
+		FA333F381CECAE9C00237A60 /* MonsterObject2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MonsterObject2.h; path = ../../include/MonsterObject2.h; sourceTree = "<group>"; };
+		FA333F391CECAEAD00237A60 /* MonsterObject3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MonsterObject3.h; path = ../../include/MonsterObject3.h; sourceTree = "<group>"; };
+		FA333F3A1CECAECA00237A60 /* MonsterObject2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MonsterObject2.cpp; path = ../../src/MonsterObject2.cpp; sourceTree = "<group>"; };
+		FA333F3C1CECAEDB00237A60 /* MonsterObject3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MonsterObject3.cpp; path = ../../src/MonsterObject3.cpp; sourceTree = "<group>"; };
+		FA6895031CCBB48B00A748D2 /* CharObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharObject.h; path = ../../include/CharObject.h; sourceTree = "<group>"; };
+		FA6895041CCBB57700A748D2 /* CharObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CharObject.cpp; path = ../../src/CharObject.cpp; sourceTree = "<group>"; };
+		FA8954EF1CEFA14C0019E616 /* Animator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Animator.h; path = ../../include/Animator.h; sourceTree = "<group>"; };
+		FA8954F01CEFA16C0019E616 /* Animator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Animator.cpp; path = ../../src/Animator.cpp; sourceTree = "<group>"; };
+		FABC1CCF1CF09AD600833C08 /* MonsterAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MonsterAnimator.h; path = ../../include/MonsterAnimator.h; sourceTree = "<group>"; };
+		FABC1CD01CF09AEE00833C08 /* MonsterAnimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MonsterAnimator.cpp; path = ../../src/MonsterAnimator.cpp; sourceTree = "<group>"; };
+		FABC1CD21CF0B7E800833C08 /* BulletAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BulletAnimator.h; path = ../../include/BulletAnimator.h; sourceTree = "<group>"; };
+		FABC1CD31CF0B80200833C08 /* BulletAnimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BulletAnimator.cpp; path = ../../src/BulletAnimator.cpp; sourceTree = "<group>"; };
+		FAD2F9011CDB6CC300D30C99 /* ColliderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ColliderInterface.h; path = ../../include/ColliderInterface.h; sourceTree = "<group>"; };
+		FAD2F9021CDB6CE300D30C99 /* ColliderInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ColliderInterface.cpp; path = ../../src/ColliderInterface.cpp; sourceTree = "<group>"; };
+		FAF3AE871CE4B23800EE725E /* Background.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Background.h; path = ../../include/Background.h; sourceTree = "<group>"; };
+		FAF3AE881CE4B2F800EE725E /* Background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Background.cpp; path = ../../src/Background.cpp; sourceTree = "<group>"; };
+		FAF8B4E11CFF73E8006490BA /* CollisionDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CollisionDetector.h; path = ../../include/CollisionDetector.h; sourceTree = "<group>"; };
+		FAF8B4E21CFF7408006490BA /* CollisionDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionDetector.cpp; path = ../../src/CollisionDetector.cpp; sourceTree = "<group>"; };
+		FAF8C4701CE72AFB00D60642 /* Bullet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bullet.h; path = ../../include/Bullet.h; sourceTree = "<group>"; };
+		FAF8C4711CE72B1E00D60642 /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bullet.cpp; path = ../../src/Bullet.cpp; sourceTree = "<group>"; };
+		FAF8C4731CE7347000D60642 /* BulletController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BulletController.h; path = ../../include/BulletController.h; sourceTree = "<group>"; };
+		FAF8C4741CE7348C00D60642 /* BulletController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BulletController.cpp; path = ../../src/BulletController.cpp; sourceTree = "<group>"; };
+		FAF8D7211CDC80020019F829 /* CollisionSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CollisionSystem.h; path = ../../include/CollisionSystem.h; sourceTree = "<group>"; };
+		FAF8D7231CDC80430019F829 /* CollisionSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionSystem.cpp; path = ../../src/CollisionSystem.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		127011271CC2A6E2001840A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E614C7F31EC22310006E6391 /* SDL2.framework in Frameworks */,
+				E614C7F51EC22356006E6391 /* SDL2_image.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		127011211CC2A6E2001840A7 = {
+			isa = PBXGroup;
+			children = (
+				E614C7F41EC22356006E6391 /* SDL2_image.framework */,
+				E614C7F21EC22310006E6391 /* SDL2.framework */,
+				127011531CC2A7B1001840A7 /* include */,
+				127011341CC2A79F001840A7 /* src */,
+				1270112B1CC2A6E2001840A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1270112B1CC2A6E2001840A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1270112A1CC2A6E2001840A7 /* LiteEngine2D */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		127011341CC2A79F001840A7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8B4E21CFF7408006490BA /* CollisionDetector.cpp */,
+				FAF8D7231CDC80430019F829 /* CollisionSystem.cpp */,
+				FAD2F9021CDB6CE300D30C99 /* ColliderInterface.cpp */,
+				127011351CC2A7AB001840A7 /* MonsterObject.cpp */,
+				FA333F3A1CECAECA00237A60 /* MonsterObject2.cpp */,
+				FA333F3C1CECAEDB00237A60 /* MonsterObject3.cpp */,
+				FA8954F01CEFA16C0019E616 /* Animator.cpp */,
+				FABC1CD01CF09AEE00833C08 /* MonsterAnimator.cpp */,
+				FABC1CD31CF0B80200833C08 /* BulletAnimator.cpp */,
+				FA6895041CCBB57700A748D2 /* CharObject.cpp */,
+				FAF8C4711CE72B1E00D60642 /* Bullet.cpp */,
+				127011361CC2A7AB001840A7 /* Game.cpp */,
+				127011371CC2A7AB001840A7 /* GameEngine.cpp */,
+				127011381CC2A7AB001840A7 /* GameTime.cpp */,
+				127011391CC2A7AB001840A7 /* Image.cpp */,
+				1270113A1CC2A7AB001840A7 /* ImageLoader.cpp */,
+				1270113B1CC2A7AB001840A7 /* Input.cpp */,
+				1270113C1CC2A7AB001840A7 /* main.cpp */,
+				1270113D1CC2A7AB001840A7 /* Object.cpp */,
+				1270113E1CC2A7AB001840A7 /* Resources.cpp */,
+				FAF8C4741CE7348C00D60642 /* BulletController.cpp */,
+				FAF3AE881CE4B2F800EE725E /* Background.cpp */,
+				1270113F1CC2A7AB001840A7 /* Scene.cpp */,
+				127011401CC2A7AB001840A7 /* SceneObject.cpp */,
+				127011411CC2A7AB001840A7 /* Screen.cpp */,
+				127011421CC2A7AB001840A7 /* Vector2.cpp */,
+				127011431CC2A7AB001840A7 /* Window.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		127011531CC2A7B1001840A7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8B4E11CFF73E8006490BA /* CollisionDetector.h */,
+				FAF8D7211CDC80020019F829 /* CollisionSystem.h */,
+				FAD2F9011CDB6CC300D30C99 /* ColliderInterface.h */,
+				127011541CC2A7BE001840A7 /* MonsterObject.h */,
+				FA333F381CECAE9C00237A60 /* MonsterObject2.h */,
+				FA333F391CECAEAD00237A60 /* MonsterObject3.h */,
+				FA8954EF1CEFA14C0019E616 /* Animator.h */,
+				FABC1CCF1CF09AD600833C08 /* MonsterAnimator.h */,
+				FABC1CD21CF0B7E800833C08 /* BulletAnimator.h */,
+				FA6895031CCBB48B00A748D2 /* CharObject.h */,
+				FAF8C4701CE72AFB00D60642 /* Bullet.h */,
+				127011551CC2A7BE001840A7 /* Game.h */,
+				127011561CC2A7BE001840A7 /* GameEngine.h */,
+				127011571CC2A7BE001840A7 /* GameTime.h */,
+				1270115A1CC2A7BE001840A7 /* Input.h */,
+				127011581CC2A7BE001840A7 /* Image.h */,
+				127011591CC2A7BE001840A7 /* ImageLoader.h */,
+				1270115B1CC2A7BE001840A7 /* Object.h */,
+				1270115C1CC2A7BE001840A7 /* ResourceLoader.h */,
+				1270115D1CC2A7BE001840A7 /* Resources.h */,
+				FAF8C4731CE7347000D60642 /* BulletController.h */,
+				FAF3AE871CE4B23800EE725E /* Background.h */,
+				1270115E1CC2A7BE001840A7 /* Scene.h */,
+				1270115F1CC2A7BE001840A7 /* SceneObject.h */,
+				127011601CC2A7BE001840A7 /* Screen.h */,
+				127011611CC2A7BE001840A7 /* Vector2.h */,
+				127011621CC2A7BE001840A7 /* Window.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		127011291CC2A6E2001840A7 /* LiteEngine2D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 127011311CC2A6E2001840A7 /* Build configuration list for PBXNativeTarget "LiteEngine2D" */;
+			buildPhases = (
+				127011261CC2A6E2001840A7 /* Sources */,
+				127011271CC2A6E2001840A7 /* Frameworks */,
+				127011281CC2A6E2001840A7 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiteEngine2D;
+			productName = LiteEngine2D;
+			productReference = 1270112A1CC2A6E2001840A7 /* LiteEngine2D */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		127011221CC2A6E2001840A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "University of Bucharest";
+				TargetAttributes = {
+					127011291CC2A6E2001840A7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 127011251CC2A6E2001840A7 /* Build configuration list for PBXProject "LiteEngine2D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 127011211CC2A6E2001840A7;
+			productRefGroup = 1270112B1CC2A6E2001840A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				127011291CC2A6E2001840A7 /* LiteEngine2D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		127011261CC2A6E2001840A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				127011461CC2A7AB001840A7 /* GameEngine.cpp in Sources */,
+				127011521CC2A7AB001840A7 /* Window.cpp in Sources */,
+				127011511CC2A7AB001840A7 /* Vector2.cpp in Sources */,
+				1270114F1CC2A7AB001840A7 /* SceneObject.cpp in Sources */,
+				FABC1CD11CF09AEE00833C08 /* MonsterAnimator.cpp in Sources */,
+				FA6895051CCBB57700A748D2 /* CharObject.cpp in Sources */,
+				127011441CC2A7AB001840A7 /* MonsterObject.cpp in Sources */,
+				FAF3AE891CE4B2F800EE725E /* Background.cpp in Sources */,
+				FAF8B4E31CFF7408006490BA /* CollisionDetector.cpp in Sources */,
+				FAF8C4721CE72B1E00D60642 /* Bullet.cpp in Sources */,
+				127011491CC2A7AB001840A7 /* ImageLoader.cpp in Sources */,
+				127011501CC2A7AB001840A7 /* Screen.cpp in Sources */,
+				FAD2F9031CDB6CE300D30C99 /* ColliderInterface.cpp in Sources */,
+				FAF8D7241CDC80430019F829 /* CollisionSystem.cpp in Sources */,
+				FAF8C4751CE7348C00D60642 /* BulletController.cpp in Sources */,
+				FA333F3D1CECAEDB00237A60 /* MonsterObject3.cpp in Sources */,
+				1270114A1CC2A7AB001840A7 /* Input.cpp in Sources */,
+				FABC1CD41CF0B80200833C08 /* BulletAnimator.cpp in Sources */,
+				FA333F3B1CECAECA00237A60 /* MonsterObject2.cpp in Sources */,
+				FA8954F11CEFA16C0019E616 /* Animator.cpp in Sources */,
+				127011471CC2A7AB001840A7 /* GameTime.cpp in Sources */,
+				127011451CC2A7AB001840A7 /* Game.cpp in Sources */,
+				1270114E1CC2A7AB001840A7 /* Scene.cpp in Sources */,
+				1270114B1CC2A7AB001840A7 /* main.cpp in Sources */,
+				1270114D1CC2A7AB001840A7 /* Resources.cpp in Sources */,
+				127011481CC2A7AB001840A7 /* Image.cpp in Sources */,
+				1270114C1CC2A7AB001840A7 /* Object.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1270112F1CC2A6E2001840A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"\"$(SRCROOT)/../../include\"",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		127011301CC2A6E2001840A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"\"$(SRCROOT)/../../include\"",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		127011321CC2A6E2001840A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2_image/2.0.1_1/lib,
+					/usr/local/Cellar/sdl2/2.0.4/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		127011331CC2A6E2001840A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2_image/2.0.1_1/lib,
+					/usr/local/Cellar/sdl2/2.0.4/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		127011251CC2A6E2001840A7 /* Build configuration list for PBXProject "LiteEngine2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1270112F1CC2A6E2001840A7 /* Debug */,
+				127011301CC2A6E2001840A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		127011311CC2A6E2001840A7 /* Build configuration list for PBXNativeTarget "LiteEngine2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				127011321CC2A6E2001840A7 /* Debug */,
+				127011331CC2A6E2001840A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 127011221CC2A6E2001840A7 /* Project object */;
+}
